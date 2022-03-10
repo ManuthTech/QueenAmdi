@@ -1,9 +1,8 @@
-FROM blackamda/queenamdi:public
+FROM Manuth/ManuthMax:public
 
-RUN git clone https://github.com/BlackAmda/QueenAmdi /root/QueenAmdi
-WORKDIR /root/QueenAmdi/
+RUN git clone https://https://github.com/ManuthTech /root/ManuthMax
+WORKDIR /root/ManuthMax/
 ENV TZ=Asia/Colombo
 RUN npm install supervisor -g
-RUN yarn install --no-audit
 
 CMD ["node", "assets/module.js"]
